@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/evicacoelho/static/css/main.744960f2.chunk.css",
+    "main.js": "/evicacoelho/static/js/main.17a04d45.chunk.js",
+    "main.js.map": "/evicacoelho/static/js/main.17a04d45.chunk.js.map",
+    "runtime~main.js": "/evicacoelho/static/js/runtime~main.3f7fa55a.js",
+    "runtime~main.js.map": "/evicacoelho/static/js/runtime~main.3f7fa55a.js.map",
+    "static/css/2.74d8a16e.chunk.css": "/evicacoelho/static/css/2.74d8a16e.chunk.css",
+    "static/js/2.e38ce092.chunk.js": "/evicacoelho/static/js/2.e38ce092.chunk.js",
+    "static/js/2.e38ce092.chunk.js.map": "/evicacoelho/static/js/2.e38ce092.chunk.js.map",
+    "index.html": "/evicacoelho/index.html",
+    "precache-manifest.99e4f567379dab0a093014f79c47e6aa.js": "/evicacoelho/precache-manifest.99e4f567379dab0a093014f79c47e6aa.js",
+    "service-worker.js": "/evicacoelho/service-worker.js",
+    "static/css/2.74d8a16e.chunk.css.map": "/evicacoelho/static/css/2.74d8a16e.chunk.css.map",
+    "static/css/main.744960f2.chunk.css.map": "/evicacoelho/static/css/main.744960f2.chunk.css.map",
+    "static/media/about.jpg": "/evicacoelho/static/media/about.4a19367d.jpg",
+    "static/media/style.css": "/evicacoelho/static/media/hero-bg.5eb41fa3.jpg",
+    "static/media/hero.png": "/evicacoelho/static/media/hero.9bad5c57.png"
+  }
+}

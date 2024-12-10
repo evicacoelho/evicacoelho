@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f08cbca48e20dbadc061bfca4dcaa059",
+    "revision": "50b367851f9e40a7df752f220c234464",
     "url": "/evicacoelho/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/evicacoelho/static/css/2.74d8a16e.chunk.css"
   },
   {
-    "revision": "76077e59a476f98eadad",
-    "url": "/evicacoelho/static/css/main.744960f2.chunk.css"
+    "revision": "5381a35500cddc9cefd9",
+    "url": "/evicacoelho/static/css/main.e7f14e3a.chunk.css"
   },
   {
     "revision": "1e300f18939864fbae46",
     "url": "/evicacoelho/static/js/2.e38ce092.chunk.js"
   },
   {
-    "revision": "76077e59a476f98eadad",
-    "url": "/evicacoelho/static/js/main.17a04d45.chunk.js"
+    "revision": "5381a35500cddc9cefd9",
+    "url": "/evicacoelho/static/js/main.b820de1a.chunk.js"
   },
   {
     "revision": "4a9e6a257397b0879094",

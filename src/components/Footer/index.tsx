@@ -3,7 +3,7 @@ import './style.css'
 
 export const Footer: React.FC = () => {
     return (
-        <div className="footer wow fadeIn" data-wow-delay="0.3s">
+        <div className="footer wow fadeIn" data-wow-delay="0.3s" id="footer">
             <div className="container-fluid">
                 <div className="container">
                     <div className="footer-info">

@@ -119,7 +119,6 @@ const App: React.FC = () => {
         <Hero />
         <About />
         <Experience />
-        <Service />
         <Footer />
         <a href="#" className="btn back-to-top">Back To the Top<i className="fa fa-chevron-up"></i></a>
         <div id="loader" className="show">

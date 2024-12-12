@@ -45,12 +45,13 @@
     padding: 65px 35px 30px 35px;
     text-align: center;
     background: #ffffff;
-    border-radius: 500px;
+    border-radius: 50px;
 }
 
 .testimonial .testimonial-item p {
     font-size: 18px;
     font-style: italic;
+    text-align: left;
 }
 
 .testimonial .testimonial-text h3 {
@@ -64,22 +65,4 @@
     color: #666666;
     font-size: 14px;
     margin-bottom: 0;
-}
-
-.testimonial .owl-dots {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.testimonial .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(256, 256, 256, .5);
-}
-
-.testimonial .owl-dot.active {
-    background: #ffffff;
 }

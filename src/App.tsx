@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Typed from 'typed.js';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'isotope-layout';
@@ -78,20 +77,6 @@ const App: React.FC = () => {
       });
     });
 
-    // Typed.js Initialization
-    const heroText = document.querySelector('.hero .hero-text h2');
-    if (heroText) {
-      const typedStrings = document.querySelector('.hero .hero-text .typed-text')?.textContent;
-      if (typedStrings) {
-        new Typed('.hero .hero-text h2', {
-          strings: typedStrings.split(', '),
-          typeSpeed: 100,
-          backSpeed: 20,
-          loop: true,
-        });
-      }
-    }
-
     // Skills Progress
     const progressBars = document.querySelectorAll('.progress-bar');
     progressBars.forEach(bar => {
@@ -119,6 +104,8 @@ const App: React.FC = () => {
         <Hero />
         <About />
         <Experience />
+        <Testimonial />
+        <Contact />
         <Footer />
         <a href="#" className="btn back-to-top">Back To the Top<i className="fa fa-chevron-up"></i></a>
         <div id="loader" className="show">

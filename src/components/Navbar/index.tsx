@@ -14,6 +14,7 @@ export const Navbar: React.FC = () => {
                         <a href="#home" className="nav-item nav-link active">Home</a>
                         <a href="#about" className="nav-item nav-link">About</a>
                         <a href="#experience" className="nav-item nav-link">Experience</a>
+                        <a href='#review' className="nav-item nav-link">Reviews</a>
                         <a href="#footer" className="nav-item nav-link">Contact</a>
                     </div>
                 </div>

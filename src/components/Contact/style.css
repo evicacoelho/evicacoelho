@@ -1,19 +1,24 @@
 .contact {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     margin: 45px 0;
     background: #EF233C;
 }
 
-.contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
+.contact .contact-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
     background: #EF233C;
+    width: 100%;
 }
 
 .contact .contact-form input {
@@ -69,11 +74,12 @@
 }
 
 @media (max-width: 767.98px) {
-    .contact .container-fluid {
-        background: none;
+    .contact {
+        flex-direction: column;
     }
-    
-    .contact .contact-form {
-        padding: 90px 0;
+
+    .contact-image {
+        margin-bottom: 20px; 
     }
 }
+

@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import heroImage from '../../visuals/hero.png'
 import './style.css'
+import Typed from 'typed.js';
 
 export const Hero: React.FC = () => {
+    useEffect(() => {
+        const heroText = document.querySelector('.hero .hero-text h2');
+        if (heroText) {
+            const typedStrings = document.querySelector('.hero .hero-text .typed-text')?.textContent;
+            if (typedStrings) {
+                new Typed('.hero .hero-text h2', {
+                    strings: typedStrings.split(', '),
+                    typeSpeed: 150,
+                    backSpeed: 20,
+                    loop: true,
+                });
+            }
+        }
+    });
+
     return (
         <div className="hero" id="home">
             <div className="container-fluid">
@@ -12,7 +28,7 @@ export const Hero: React.FC = () => {
                             <div className="hero-text">
                                 <h1>Emanuelle Coelho</h1>
                                 <div className="typed-text">
-                                    <h2>Backend Developer, Biologist, Global Citizen</h2>
+                                    <h2>Backend Developer, Biologist, Leader</h2>
                                 </div>
                             </div>
                             <div className="hero-btn">

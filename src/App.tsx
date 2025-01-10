@@ -19,6 +19,11 @@ import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
   useEffect(() => {
+    // Email server
+    fetch("/api")
+    .then((res => res.json()))
+    .then((data) => { console.log(data)})
+
     // Loader
     const loader = () => {
       setTimeout(() => {

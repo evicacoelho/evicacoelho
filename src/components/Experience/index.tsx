@@ -33,7 +33,7 @@ export const Experience: React.FC = () => {
                     <div className="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div className="timeline-text">
                         <div className="timeline-date">2022 - 2023</div>
-                            <h2>Product Manager Jr.</h2>
+                            <h2>Help Desk Analist L2</h2>
                             <h4>LEVEE, Dover, DE</h4>
                             <p>
                                 Responsible for identifying, diagnosing and resolving technical issues faced by end customers on the SaaS platform, ensuring an optimized user experience and minimizing operational interruptions.

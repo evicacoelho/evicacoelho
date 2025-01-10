@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/evicacoelho/static/css/main.4bdf7dc8.chunk.css",
+    "main.js": "/evicacoelho/static/js/main.62b2e500.chunk.js",
+    "main.js.map": "/evicacoelho/static/js/main.62b2e500.chunk.js.map",
+    "runtime~main.js": "/evicacoelho/static/js/runtime~main.3f7fa55a.js",
+    "runtime~main.js.map": "/evicacoelho/static/js/runtime~main.3f7fa55a.js.map",
+    "static/css/2.534f243b.chunk.css": "/evicacoelho/static/css/2.534f243b.chunk.css",
+    "static/js/2.39d86e02.chunk.js": "/evicacoelho/static/js/2.39d86e02.chunk.js",
+    "static/js/2.39d86e02.chunk.js.map": "/evicacoelho/static/js/2.39d86e02.chunk.js.map",
+    "index.html": "/evicacoelho/index.html",
+    "precache-manifest.15c7b930507e3a3a8642196fa7c91b05.js": "/evicacoelho/precache-manifest.15c7b930507e3a3a8642196fa7c91b05.js",
+    "service-worker.js": "/evicacoelho/service-worker.js",
+    "static/css/2.534f243b.chunk.css.map": "/evicacoelho/static/css/2.534f243b.chunk.css.map",
+    "static/css/main.4bdf7dc8.chunk.css.map": "/evicacoelho/static/css/main.4bdf7dc8.chunk.css.map",
+    "static/media/about.jpg": "/evicacoelho/static/media/about.4a19367d.jpg",
+    "static/media/contact.svg": "/evicacoelho/static/media/contact.e8137cce.svg",
+    "static/media/style.css": "/evicacoelho/static/media/hero-bg.5eb41fa3.jpg",
+    "static/media/hero.png": "/evicacoelho/static/media/hero.9bad5c57.png",
+    "static/media/styles.css": "/evicacoelho/static/media/revicons.2feb69cc.eot",
+    "static/media/testimonial-1.jpg": "/evicacoelho/static/media/testimonial-1.86c3f7a7.jpg",
+    "static/media/testimonial-2.jpg": "/evicacoelho/static/media/testimonial-2.1fabb85c.jpg",
+    "static/media/testimonial-3.jpg": "/evicacoelho/static/media/testimonial-3.9d9e1b6d.jpg"
+  }
+}

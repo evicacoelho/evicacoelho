@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://evicacoelho.github.io/evicacoelho",
-  "proxy": "http://localhost:3001",
+  "proxy": "http://evicacoelho.github.io/evicacoelho/proxy",
   "dependencies": {
     "cra-template-typescript": "1.2.0",
     "isotope-layout": "^3.0.6",

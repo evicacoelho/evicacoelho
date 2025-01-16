@@ -24,8 +24,3 @@ yarn-error.log*
 
 # env
 .env
-
-# config
-package-lock.json
-package.json
-.gitignore

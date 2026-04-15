@@ -1,7 +1,7 @@
 # hey, welcome. I'm Emanuelle
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF0000&center=true&vCenter=true&width=940&lines=End-to-End+Developer;AI+Enthusiast;Biophysics" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF0000&center=true&vCenter=true&width=940&lines=End-to-End+Developer;AI+Enthusiast;Biophysics;The+Urutau" alt="Typing SVG" />
 </div>
 
 <div align="center">

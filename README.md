@@ -1,7 +1,7 @@
-# 👋 Hi, I'm Emanuelle Coelho!
+# hey, welcome. I'm Emanuelle
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A855F7&center=true&vCenter=true&width=940&lines=Backend+Developer;Aspiring+Fullstack+Developer;Always+Learning+Something+New" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF0000&center=true&vCenter=true&width=940&lines=End-to-End+Developer;AI+Enthusiast;Biophysics" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -10,17 +10,14 @@
   <img src="https://visitor-badge.laobi.icu/badge?page_id=evicacoelho.evicacoelho" alt="Visitor Badge">
 </div>
 
-## 🌟 About Me
+## about
 
-I'm a passionate Backend Developer from Brasília, Brazil 🇧🇷, currently leveling up my skills to become a Fullstack Developer. I love building robust systems and exploring new technologies. When I'm not coding, you'll find me learning about distributed systems, cloud architecture, or contributing to open-source projects.
+I'm a passionate Biologist and Developer from Brasília, Brazil 🇧🇷. I build robust systems and exploring new technologies and AI agents. When I'm not coding, you'll find me learning about distributed systems, cloud architecture and AI frameworks.
 
-- 🔭 **Currently working on**: My personal portfolio website (this repo!)
-- 🌱 **Learning**: Advanced React patterns, cloud-native development, and DevOps practices
 - 💬 **Ask me about**: Java, Python, Go, backend architecture, or anything tech-related
 - 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/evicacoelho) | [Email](mailto:your.email@example.com)
-- ⚡ **Fun fact**: I started coding during the pandemic and haven't stopped since!
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=evicacoelho&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%">
@@ -32,9 +29,9 @@ I'm a passionate Backend Developer from Brasília, Brazil 🇧🇷, currently le
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=evicacoelho&theme=radical&hide_border=true&bg_color=0D1117" alt="Wakatime Stats" width="48%"> <!-- Replace with actual Wakatime username if available -->
 </div>
 
-## 🛠️ Tech Stack & Tools
+## tech stack & tools
 
-### Languages & Frameworks
+### languages & frameworks
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
@@ -44,7 +41,7 @@ I'm a passionate Backend Developer from Brasília, Brazil 🇧🇷, currently le
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
 </p>
 
-### Databases & Tools
+### databases & tools
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
@@ -54,23 +51,7 @@ I'm a passionate Backend Developer from Brasília, Brazil 🇧🇷, currently le
   <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm">
 </p>
 
-## 🚀 Featured Projects
-
-### [Portfolio Website](https://github.com/evicacoelho/evicacoelho) ⭐
-A modern, responsive React portfolio showcasing my journey and skills. Built with TypeScript and custom CSS.
-
-**Tech Stack:** React, TypeScript, CSS3, JavaScript
-
-**Features:**
-- Responsive design for all devices
-- Multiple sections: Hero, About, Experience, Portfolio, Contact
-- Clean, modern UI with smooth animations
-
-### 🔗 Other Projects
-- **[Project 1](https://github.com/evicacoelho/project1)** - Brief description
-- **[Project 2](https://github.com/evicacoelho/project2)** - Brief description
-
-## 🌐 Connect With Me
+## hire me
 
 <p align="center">
   <a href="https://github.com/evicacoelho" target="_blank">
@@ -87,32 +68,12 @@ A modern, responsive React portfolio showcasing my journey and skills. Built wit
   </a>
 </p>
 
-## 🎯 Goals for 2024
-- [ ] Contribute to more open-source projects
-- [ ] Learn Kubernetes and cloud-native development
-- [ ] Build and deploy a fullstack application
-- [ ] Attend a tech conference
-- [ ] Improve my English proficiency
-
-## 📝 Recent Blog Posts
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
-
-## 💻 Coding Activity
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
 ---
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote">
 </div>
 
-<div align="center">
-  <img src="https://github.com/evicacoelho/evicacoelho/blob/main/github-contribution-grid-snake.svg" alt="Snake animation">
-</div>
-
 ---
 
-⭐ **Thanks for visiting my profile!** Feel free to explore my repositories and reach out if you'd like to collaborate.
+⭐ **Thanks for visiting my profile!**

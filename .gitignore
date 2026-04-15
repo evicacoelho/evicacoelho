@@ -12,6 +12,7 @@
 /build
 
 # misc
+EMAILJS_SETUP.md
 .DS_Store
 .env.local
 .env.development.local

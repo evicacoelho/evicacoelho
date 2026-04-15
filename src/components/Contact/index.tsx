@@ -1,125 +1,203 @@
 import React, { useState } from 'react';
-import contactImage from '../../visuals/contact.svg';
+import emailjs from '@emailjs/browser';
+import './style.css';
 
-export const Contact: React.FC = () => {
-    const formInitialDetals = {
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    };
+interface ContactProps {
+  content: {
+    contactTitle: string;
+    contactText: string;
+    email: string;
+    linkedin: string;
+    github: string;
+  };
+}
 
-    const [formDetails, setFormDetails] = useState(formInitialDetals);
-    const [buttonText, setButtonText] = useState("Send");
-    const [status, setStatus] = useState<{ success?: boolean; message?: string }>({});
+declare global {
+  interface Window {
+    emailJSInitialized?: boolean;
+  }
+}
 
-    const onFormUpdate = (category: keyof typeof formInitialDetals, value: string) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value,
-        });
-    };
+export const Contact: React.FC<ContactProps> = ({ content }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setButtonText("Sending...");
-        try {
-            let response = await fetch("/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json;charset=utf-8",
-                },
-                body: JSON.stringify(formDetails),
-            });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
-            if (!response.ok) {
-                throw new Error("Failed to send message");
-            }
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('sending');
+    setErrorMessage('');
 
-            let result = await response.json();
-            setButtonText("Send");
-            setFormDetails(formInitialDetals);
+    try {
+      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-            if (result.code === 200) {
-                setStatus({ success: true, message: "Message sent successfully" });
-            } else {
-                setStatus({ success: false, message: "Something went wrong, please try again later." });
-            }
-        } catch (error) {
-            console.error("Error:", error);
-            setButtonText("Send");
-            setStatus({ success: false, message: "Network error. Please try again later." });
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS credentials not configured. Please set environment variables.');
+      }
+
+      // Initialize EmailJS (only once per session)
+      if (!window.emailJSInitialized) {
+        emailjs.init(publicKey);
+        window.emailJSInitialized = true;
+      }
+
+      // Send email
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: content.email,
         }
-    };
+      );
 
-    return (
-        <div className="container-fluid contact">
-            <div className="row align-items-center">
-                <div className="col-md-3">
-                    <img src={contactImage} alt="Contact" className="contact-image" width={400} />
-                </div>
-                <div className="col-md-6">
-                    <div className="contact-form">
-                        <form name="sentMessage" id="contactForm" noValidate onSubmit={handleSubmit}>
-                            <div className="control-group">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    placeholder="Your Name"
-                                    required
-                                    value={formDetails.name}
-                                    onChange={(e) => onFormUpdate("name", e.target.value)}
-                                />
-                            </div>
-                            <div className="control-group">
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="email"
-                                    placeholder="Your Email"
-                                    required
-                                    value={formDetails.email}
-                                    onChange={(e) => onFormUpdate("email", e.target.value)}
-                                />
-                            </div>
-                            <div className="control-group">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="subject"
-                                    placeholder="Subject"
-                                    required
-                                    value={formDetails.subject}
-                                    onChange={(e) => onFormUpdate("subject", e.target.value)}
-                                />
-                            </div>
-                            <div className="control-group">
-                                <textarea
-                                    className="form-control"
-                                    id="message"
-                                    placeholder="Message"
-                                    required
-                                    value={formDetails.message}
-                                    onChange={(e) => onFormUpdate("message", e.target.value)}
-                                />
-                            </div>
-                            <div>
-                                <button className="btn" type="submit" id="sendMessageButton">
-                                    {buttonText}
-                                </button>
-                                {status.message && (
-                                    <div className="row">
-                                        <p className={status.success === false ? "danger" : "success"}>
-                                            {status.message}
-                                        </p>
-                                    </div>
-                                )}
-                            </div>
-                        </form>
-                    </div>
-                </div>
+      setStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      // Reset status after 3 seconds
+      setTimeout(() => setStatus('idle'), 3000);
+    } catch (error) {
+      console.error('Email send error:', error);
+      setStatus('error');
+      setErrorMessage(
+        error instanceof Error ? error.message : 'Failed to send email. Please try again.'
+      );
+    }
+  };
+
+  return (
+    <div className="window window--medium">
+      <div className="title-bar title-bar--inactive">
+        <span>{content.contactTitle}.exe</span>
+      </div>
+      <div className="window-body">
+        <div className="contact-content">
+          <h3 className="contact-intro">{content.contactText}</h3>
+
+          <form onSubmit={handleSubmit} className="contact-form">
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                placeholder="Your name"
+              />
             </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
+                placeholder="Message subject"
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                placeholder="Your message..."
+                rows={5}
+              />
+            </div>
+
+            <div className="form-actions">
+              <button
+                type="submit"
+                className="button"
+                disabled={status === 'sending'}
+              >
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
+              </button>
+            </div>
+
+            {status === 'success' && (
+              <div className="form-message success">
+                ✓ Message sent successfully! I'll get back to you soon.
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="form-message error">
+                ✗ Error: {errorMessage}
+              </div>
+            )}
+          </form>
+
+          <div className="contact-links">
+            <p className="contact-label">Or reach out directly:</p>
+            <div className="contact-buttons">
+              <a
+                href={`mailto:${content.email}`}
+                className="button contact-link-btn"
+              >
+                Email
+              </a>
+              <a
+                href={content.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button contact-link-btn"
+              >
+                LinkedIn
+              </a>
+              <a
+                href={content.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button contact-link-btn"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };

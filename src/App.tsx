@@ -121,8 +121,20 @@ const content = {
 
 const App: React.FC = () => {
   const [language, setLanguage] = useState<'en' | 'pt'>('en');
+  const [clock, setClock] = useState(() => {
+    const d = new Date();
+    return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  });
   const t = content[language];
   const publicUrl = process.env.PUBLIC_URL || '';
+
+  React.useEffect(() => {
+    const id = setInterval(() => {
+      const d = new Date();
+      setClock(d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+    }, 1000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <div className="app-shell">
@@ -177,7 +189,7 @@ const App: React.FC = () => {
             </div>
             <div className="window-body">
               <h3>{t.aboutTitle}</h3>
-              <p>{t.aboutText}</p>
+              <p className="about-text">{t.aboutText}</p>
             </div>
           </section>
 
@@ -247,7 +259,11 @@ const App: React.FC = () => {
       </main>
 
       <footer className="taskbar">
-        <div className="taskbar__right">{language.toUpperCase()} | GitHub Pages</div>
+        <div className="taskbar__left">🪟 Start</div>
+        <div className="taskbar__right">
+          <span className="taskbar__lang">{language.toUpperCase()}</span>
+          <span className="taskbar__clock">{clock}</span>
+        </div>
       </footer>
     </div>
   );

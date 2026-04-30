@@ -3,6 +3,7 @@
 :root {
   --w95-base: #c3c7cb;
   --w95-light: #ececec;
+  --w95-lighter: #f5f5f5;
   --w95-dark: #808080;
   --w95-darker: #dfdfdf;
   --w95-blue: #000080;
@@ -13,7 +14,7 @@
   --w95-white: #ffffff;
   --w95-red: #ff0000;
   --w95-yellow: #ffff00;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 * {
@@ -26,7 +27,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, #c3c7cb 0%, #b8bcc0 100%);
+  background-color: #008080;
   font-family: 'MS Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--w95-black);
   overflow: hidden;
@@ -254,6 +255,10 @@ select {
   font-size: 16px;
 }
 
+.about-text {
+  white-space: pre-wrap;
+}
+
 .button-row {
   display: flex;
   gap: 12px;
@@ -407,10 +412,27 @@ select {
   border-color: var(--w95-light) var(--w95-dark) var(--w95-dark) var(--w95-light);
   padding: 4px 8px;
   min-width: 60px;
+  cursor: default;
+  user-select: none;
 }
 
 .taskbar__right {
   color: var(--w95-black);
+  gap: 10px;
+}
+
+.taskbar__lang {
+  font-size: 11px;
+  color: var(--w95-dark);
+}
+
+.taskbar__clock {
+  border: 2px solid;
+  border-color: var(--w95-dark) var(--w95-light) var(--w95-light) var(--w95-dark);
+  padding: 2px 6px;
+  font-size: 11px;
+  min-width: 44px;
+  text-align: center;
 }
 
 /* Notes & Helpers */
@@ -469,15 +491,16 @@ code {
 
 /* Responsive */
 @media (max-width: 1200px) {
-  .window--medium {
+  .window--medium,
+  .window-column {
     grid-column: span 12;
   }
-  
+
   .app-shell {
     padding: 8px;
     gap: 8px;
   }
-  
+
   .window-grid {
     gap: 8px;
   }

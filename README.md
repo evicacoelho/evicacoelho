@@ -15,7 +15,7 @@
 I'm a passionate Biologist and Developer from Brasília, Brazil 🇧🇷. I build robust systems and exploring new technologies and AI agents. When I'm not coding, you'll find me learning about distributed systems, cloud architecture and AI frameworks.
 
 - 💬 **Ask me about**: Java, Python, Go, backend architecture, or anything tech-related
-- 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/evicacoelho) | [Email](mailto:your.email@example.com)
+- 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/evicacoelho) | [Email](mailto:your.email@example.com) | [Portifolio](https://evicacoelho.github.io/evicacoelho/)
 
 ## GitHub Stats
 

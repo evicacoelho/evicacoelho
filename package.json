@@ -2,8 +2,7 @@
   "name": "evicacoelho",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://evicacoelho.github.io/evicacoelho",
-  "proxy": "http://evicacoelho.github.io/evicacoelho/proxy",
+  "homepage": "https://evicacoelho.github.io/evicacoelho",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "cra-template-typescript": "1.2.0",

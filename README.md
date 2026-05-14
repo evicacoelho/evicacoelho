@@ -14,8 +14,8 @@
 
 I'm a passionate Biologist and Developer from Brasília, Brazil 🇧🇷. I build robust systems and exploring new technologies and AI agents. When I'm not coding, you'll find me learning about distributed systems, cloud architecture and AI frameworks.
 
-- 💬 **Ask me about**: Java, Python, Go, backend architecture, or anything tech-related
-- 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/evicacoelho) | [Email](mailto:your.email@example.com) | [Portifolio](https://evicacoelho.github.io/evicacoelho/)
+- 💬 **Ask me about**: Java, Python, Go, Javascript, backend architecture, or anything tech-related
+- 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/evicacoelho) | [Email](mailto:evicacoelho@proton.me) | [Portifolio](https://evicacoelho.github.io/evicacoelho/)
 
 ## GitHub Stats
 
@@ -60,10 +60,7 @@ I'm a passionate Biologist and Developer from Brasília, Brazil 🇧🇷. I buil
   <a href="https://www.linkedin.com/in/evicacoelho" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://twitter.com/yourusername" target="_blank"> <!-- Replace with actual Twitter if available -->
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
-  </a>
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:evicacoelho@proton.me">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
 </p>

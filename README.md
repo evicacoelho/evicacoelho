@@ -1,7 +1,7 @@
 # hey, welcome. I'm Emanuelle
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF0000&center=true&vCenter=true&width=940&lines=End-to-End+Developer;AI+Enthusiast;Biophysics;The+Urutau" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF0000&center=true&vCenter=true&width=940&lines=Full+Stack+Developer;AI+Enthusiast;Biophysics;I+<3+Coding;Bird+enjoyer" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -23,18 +23,6 @@ I'm a passionate Biologist and Developer from Brasília, Brazil 🇧🇷. I buil
 
 - 💬 **Ask me about**: Java, Python, Go, Javascript, backend architecture, or anything tech-related
 - 📫 **How to reach me**: [LinkedIn](https://www.linkedin.com/in/evicacoelho) | [Email](mailto:evicacoelho@proton.me) | [Portifolio](https://evicacoelho.github.io/evicacoelho/)
-
-## GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=evicacoelho&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=evicacoelho&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%">
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=evicacoelho&theme=radical&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=evicacoelho&theme=radical&hide_border=true&bg_color=0D1117" alt="Wakatime Stats" width="48%"> <!-- Replace with actual Wakatime username if available -->
-</div>
 
 ## tech stack & tools
 
